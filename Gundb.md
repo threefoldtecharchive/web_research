@@ -8,8 +8,3 @@ j.threebot.packages.zerobot.packagemanager.actors.package_manager.package_add(pa
 http://172.17.0.2/gun/static/todo.html
 http://172.17.0.2/gun/static/todo2.html (not working correctly for now)
 http://172.17.0.2/gun/static/todo3.html (not working correctly for now)
-
-
-# collaboration
-python3 -m pip install pre-commit
-pre-commit install
