@@ -1,0 +1,10 @@
+[source]
+name = "gundb"
+threebot = "jumpscale"
+version = "1.0.0"
+
+[[bcdbs]]
+name = "gundb"
+namespace = "jumpscale"
+type = "zdb"
+instance = "default"

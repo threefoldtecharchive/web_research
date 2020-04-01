@@ -1,0 +1,56 @@
+@url = proj.todoitem
+a= "" (S)
+title** = "" (S)
+done = False (B)
+
+@url = proj.todolist
+a= "" (S)
+name** = "" (S)
+list_todos = (LO) !proj.todoitem
+
+@url = proj.simple
+metadata = "" (S)
+attr1** = "" (S)
+attr2 = 0 (I)
+list_mychars = (LS)
+
+@url = proj.email
+metadata = "" (S)
+addr** = "" (S)
+
+@url = proj.person
+metadata = "" (S)
+name** = "" (S)
+email = (O) !proj.email
+
+@url = proj.os
+metadata = "" (S)
+name** = "" (S)
+
+@url = proj.phone
+metadata = "" (S)
+model** = "" (S)
+os = (O) !proj.os
+
+@url = proj.lang
+metadata = "" (S)
+name** = ""
+
+@url = proj.human
+metadata = "" (S)
+name** = "" (S)
+list_favcolors = (LS)
+list_langs = (LO) !proj.lang
+phone = (O) !proj.phone
+
+@url = proj.post
+metadata = "" (S)
+name = "" (S)
+title** = "" (S)
+body = "" (S)
+
+@url = proj.blog
+metadata = "" (S)
+name** = "" (S)
+list_posts = (LO) !proj.post
+headline = "" (S)
