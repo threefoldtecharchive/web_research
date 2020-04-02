@@ -15,6 +15,18 @@ A python to javascript compiler, you can convert python code to working javascri
 
 - Not all  python standard libs are supported like `json`, `urllib3`, ...
 - 3rd party libs are mostly not supported at all
+- We can not transcrypt our jsx baseclasses to javascript, too complex
+- If we are going to build extra jsx simple baseclasses to be used with transcypt, why not building it in javascript to begin with
+- Ugly and mixed javascript & python code
+- If you want to manipulate templates, or css, you'll have to do it in a non standard way here
+- another issue if you want to use http client like javascript `axios`, you have to import in your application itself, not in the transcrypted file
+which makes the transcrypted file not modular, u have to ask user to include certain dependencies in their app and expose them in a way that
+when the transcrypted js files can see them in order to work which again can cause complexity and errors and not simple development process
+- Extra layer of compilation !!
+- If we are going to write much js code in the transcrypted file, why not going directly for js? making things consistent
+
+# Personal opinion (Hamdy)
+Spending time building pure javascript libs that are framework independent could be worthy on the long term
 
 
 # Examples
