@@ -95,3 +95,6 @@ ENV/
 .vscode
 *.log
 .idea
+
+# node
+node_modules
