@@ -1,6 +1,7 @@
 from geventwebsocket import WebSocketServer, WebSocketApplication, Resource
 from geventwebsocket.protocols.base import BaseProtocol
 from gundb.gunrequesthandler import GUNRequestHandler
+from geventwebsocket.exceptions import WebSocketError
 
 
 class GeventRequestHandler(BaseProtocol):
@@ -20,7 +21,10 @@ class GeventRequestHandler(BaseProtocol):
 
     def on_message(self, msgstr):
         self._handler.on_message(msgstr)
-        super().on_message(msgstr)
+        try:
+            super().on_message(msgstr)
+        except WebSocketError:
+            pass
 
 
 class GeventGunServer(WebSocketApplication):

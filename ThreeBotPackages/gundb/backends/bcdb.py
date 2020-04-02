@@ -81,7 +81,7 @@ class BCDB(BackendMixin):
         try:
             db_obj = m.get(obj_id=obj_id)
         except:
-            db_obj = m.new({"id": int(obj_id)})
+            db_obj = m.new()
 
         obj = self.stringify_metadata(self.delegate_list_metadatata(obj))
         self.set_graph_to_obj(obj, db_obj)
