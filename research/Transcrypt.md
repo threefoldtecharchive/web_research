@@ -1,6 +1,6 @@
 # What is Transcrypt
 
-A python to javascrupt compiler, you can convert python code to working javascript code and import in your application
+A python to javascript compiler, you can convert python code to working javascript code and import in your application
 
 # Install
 
