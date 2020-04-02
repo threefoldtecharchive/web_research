@@ -38,7 +38,7 @@ class Package(j.baseclasses.threebot_package):
         from gundb.geventserver import GeventGunServer
         from gundb.server import app
 
-        GeventGunServer.backend = "bcdb"
+        GeventGunServer.backend = "redis"
 
         ws_server = WebSocketServer(("", 7766), Resource(OrderedDict([("/gun", GeventGunServer)])))
         self.gevent_rack.add(name="gundb", server=ws_server)
