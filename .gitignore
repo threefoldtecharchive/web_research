@@ -98,3 +98,7 @@ ENV/
 
 # node
 node_modules
+
+lib
+tmp
+yarn.lock
